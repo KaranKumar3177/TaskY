@@ -27,33 +27,33 @@
           <label for="basic-url" class="form-label fw-normal">Image URL</label>
           <div class="input-group">
            
-            <input type="text" class="form-control" placeholder="http://example.com/image.png"" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+            <input type="url" class="form-control" placeholder="http://example.com/image.png"" id="basic-url" aria-describedby="Task Url">
 
           </div>
         </div>
 
         <div class="mb-3">
-          <label for="basic-url" class="form-label fw-normal">Task Title</label>
+          <label for="taskTitle" class="form-label fw-normal">Task Title</label>
           <div class="input-group">
         
-            <input type="text" class="form-control" placeholder="Learn Web Development" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+            <input type="text" class="form-control" placeholder="Learn Web Development" id="taskTitle" aria-describedby="Enter task title">
           </div>
         </div>
         
         <div class="mb-3">
-          <label for="basic-url" class="form-label fw-normal">Task Type</label>
+          <label for="taskType" class="form-label fw-normal">Task Type</label>
           <div class="input-group">
         
-            <input type="text" class="form-control" placeholder="Work" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+            <input type="text" class="form-control" placeholder="Work" id="taskType" aria-describedby="Enter task title">
           </div>
         </div>
 
 
         <div class="mb-3">
-          <label for="basic-url" class="form-label fw-normal">Task Description</label>
+          <label for="textDescription" class="form-label fw-normal">Task Description</label>
 
           <div class="input-group">
-            <textarea class="form-control" aria-label="With textarea"></textarea>
+            <textarea class="form-control" rows="2" id="taskDescription" aria-label="With textarea"></textarea>
           </div>
         </div>
         
@@ -61,9 +61,9 @@
         
         
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer d-flex justify-content-start" >
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" onclick="saveChanges()">Save changes</button>
       </div>
     </div>
   </div>
@@ -123,7 +123,7 @@
 <!--Card Start-->
 <div class="container">
 
-  <div class="row align-items-start mt-5">
+  <div class="row align-items-start mt-5 task__container">
 
     <div class="col-sm-12 col-md-6 col-lg-4">
       <div class="card">
@@ -145,6 +145,7 @@
   </div>
 </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></scrip>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>
